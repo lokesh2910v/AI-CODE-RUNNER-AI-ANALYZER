@@ -26,9 +26,9 @@ function App() {
     spaceComplexity: string;
     linesOfCode: number;
   } | null>(null);
-
+ 
   const createGenAI = useCallback(() => {
-    return new GoogleGenerativeAI('AIzaSyBjDQsK-ajkdnqoHYELW0hV3OzN1xBzQTQ');
+    return new GoogleGenerativeAI( import.meta.env.VITE_GEMINI_API);
   }, []);
 
   const getPistonLanguage = useCallback((lang: string) => {
