@@ -294,10 +294,10 @@ Format your response in markdown.`;
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BrainCircuit size={28} />
-            <h1 className="text-2xl font-bold">Code Analyzer</h1>
+            <h1 className="text-2xl font-bold">Code Runner & Analyzer</h1>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-sm">Powered by Gemini AI</span>
+            <span className="text-sm">Learn Coding Easy & Efficiently</span>
           </div>
         </div>
       </header>
@@ -487,7 +487,7 @@ Format your response in markdown.`;
 
       <footer className="mt-12 bg-gray-100 border-t py-6">
         <div className="container mx-auto px-4 text-center text-gray-600 text-sm">
-          <p>Code Analyzer App powered by Gemini AI API</p>
+          <p>@ 2025 Lokesh All rights Reserved</p>
         </div>
       </footer>
     </div>
