@@ -32,8 +32,7 @@
 
 1. **Clone or Download the Project**  
    ```bash
-   git clone https://github.com/your-username/ai-code-runner-analyzer.git
-   cd ai-code-runner-analyzer
+   git clone https://github.com/lokesh2910v/AI-CODE-RUNNER-AI-ANALYZER.git
 
 ## Create env file and add environment variables 
 1. VITE_GEMINI_API_KEY=your-gemini-api-key
