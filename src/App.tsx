@@ -28,7 +28,7 @@ function App() {
   } | null>(null);
  
   const createGenAI = useCallback(() => {
-    return new GoogleGenerativeAI( import.meta.env.VITE_GEMINI_API);
+    return new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API);
   }, []);
 
   const getPistonLanguage = useCallback((lang: string) => {
@@ -67,7 +67,8 @@ function App() {
   const calculateMetrics = useCallback(async () => {
     try {
       const genAI = createGenAI();
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+      // Updated model to gemini-2.0-flash
+      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
       
       const prompt = `Analyze this ${language} code and provide ONLY the following metrics:
       1. Time complexity (Big O notation)
@@ -199,7 +200,8 @@ function App() {
     
     try {
       const genAI = createGenAI();
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
+      // Updated model to gemini-2.0-flash
+      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
       
       const prompt = analysisMode === 'success' 
         ? `Analyze this ${language} code and its output:
